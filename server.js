@@ -2,6 +2,9 @@ const express = require('express');
 const app = express();
 const Parser = require('rss-parser');
 const path = require('path');
+const cors = require('cors');
+
+app.use(cors());
 
 const parser = new Parser();
 app.use(express.static('public'));
