@@ -1,6 +1,6 @@
 async function loadNews() {
 
-    const response = await fetch("/api/news");
+    const response = await fetch("https://hum-aur-hindustan-newspaper.onrender.com/api/news");
     const data = await response.json();
 
     const container =
