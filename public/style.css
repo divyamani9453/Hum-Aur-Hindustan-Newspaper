@@ -22,3 +22,13 @@ h5 {
 h2, h1 {
     color: black;
 }
+
+.login_btn, .register_btn {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 5px;
+    margin-left: 10px;
+}
