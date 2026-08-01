@@ -76,9 +76,10 @@ app.post("/register", async (req, res) => {
             message: "Registration successful"
         });
         
-    } catch (error) {
+    } catch (err) {
+        console.error("Register Error:", err)
         res.status(500).json({
-            message: "Server error"
+            message: err.message
         });
     }
 });
@@ -104,9 +105,9 @@ app.post("/login", async (req, res) => {
         });
     }
     catch (err) {
-        console.log(err);
+        console.error("Login Error:", err);
         res.status(500).json({
-            message : "Server Error"
+            message : err.message
         });
 
     }
